@@ -5,7 +5,7 @@ import {config} from './config/config';
 import Logging from './library/Logging';
 import historyRoutes from'./routes/History';
 
-const router = express();
+export const router = express();
 
 /**Conexión a Mongo */
 

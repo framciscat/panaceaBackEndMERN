@@ -8,7 +8,6 @@ export interface MedicHistory {
 }
 
 
-
 export interface MedicHistoryModel extends MedicHistory, Document {}
 
 //Crear Schema con atributos
