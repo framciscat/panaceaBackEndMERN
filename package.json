@@ -5,7 +5,11 @@
   "main": "src/server.ts",
   "scripts": {
     "build": "rm -rf build/ && tsc",
+<<<<<<< Updated upstream
     "start": "node build/server.js"
+=======
+    "test": "jest"
+>>>>>>> Stashed changes
   },
   "author": "framciscat",
   "license": "ISC",
@@ -15,7 +19,13 @@
     "express": "^4.18.2",
     "joi": "^17.9.2",
     "mongodb": "^5.6.0",
+<<<<<<< Updated upstream
     "mongoose": "^7.2.3"
+=======
+    "mongoose": "^7.2.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
+>>>>>>> Stashed changes
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
