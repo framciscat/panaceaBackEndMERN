@@ -7,8 +7,6 @@ export interface MedicHistory {
     medicalApp: string;
 }
 
-
-
 export interface MedicHistoryModel extends MedicHistory, Document {}
 
 //Crear Schema con atributos

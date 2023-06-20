@@ -3,6 +3,11 @@ import mongoose from 'mongoose';
 import {config} from './config/config';
 import Logging from './library/Logging';
 import historyRoutes from'./routes/History';
+import authRoutes from './routes/authRoutes';
+import swaggerUi from 'swagger-ui-express';
+import swaggerSpec from './swagger';
+
+
 
 export const router = express();
 
@@ -51,9 +56,16 @@ const StartServer = () => {
 
     //Rutas
     router.use('/histories', historyRoutes);
+    router.use('/auth', authRoutes);
+
+ 
 
     //Servidor
     router.listen(config.server.port, () => Logging.info(`Server is running on port ${config.server.port}`));
 
 };
 
+
+//Swagger
+
+router.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
